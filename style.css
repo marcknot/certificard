@@ -13,10 +13,13 @@ body {
   box-shadow: 6px 6px 6px #0e1d2f;
   padding: 60px;
 }
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+}
 
 .perfil {
   display: flex;
-  align-items: center;
 }
 .foto-perfil {
   border-radius: 450px;
@@ -33,13 +36,16 @@ body {
 }
 .titulo h3 {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 18px;
 }
+
 .tema button {
   align-self: flex-end;
   font-size: 24px;
   font-weight: 400;
   padding: 8px 16px;
+  background: #ecf4ff;
+  border-radius: 100px;
 }
 
 .projetos {
@@ -66,4 +72,19 @@ body {
 .projetos-item a {
   color: #1c1c1c;
   text-decoration: none;
+}
+.dark {
+  background: linear-gradient(236.85deg, #375b86 27.26%, #6b87a9 96%);
+}
+.dark .container {
+  background: #333439;
+  color: #f6f6f6;
+}
+.dark .projetos {
+  color: #1c1c1c;
+}
+.dark .tema button {
+  background: #1c1c1c;
+  color: #ffffff;
+  border: 2px solid #f7f7f7;
 }
